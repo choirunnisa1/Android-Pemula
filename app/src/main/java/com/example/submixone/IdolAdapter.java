@@ -49,7 +49,7 @@ public class IdolAdapter extends RecyclerView.Adapter<IdolAdapter.ListViewHolder
             public void onClick(View view) {
                 Intent pindg = new Intent(view.getContext(), DetailActivity.class);
                 pindg.putExtra("IMAGE",idol.getPhoto());
-                pindg.putExtra("NAMA",holder.tvName.getText().toString().trim());
+                pindg.putExtra("NAME",holder.tvName.getText().toString().trim());
                 pindg.putExtra("TTL",idol.getTtl());
                 view.getContext().startActivity(pindg);
             }
